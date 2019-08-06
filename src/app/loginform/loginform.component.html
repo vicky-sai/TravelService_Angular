@@ -1,0 +1,10 @@
+<h1>Login</h1>
+<form #frm= "ngForm" (ngSubmit) = "validate()" >
+    <label for="userName">User Name </label>&nbsp;
+    <input type="text" name='userName' formControlName="name"><br>
+    <label for="passWord">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="password" name='passWord' [(ngModel)]='user.passWord'>
+    <label for=""></label><br>
+    <input type="submit">
+</form>
+{{status}}
